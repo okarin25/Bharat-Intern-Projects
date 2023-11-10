@@ -1,55 +1,49 @@
-<html>
-    
-    <head>
-    
-    <title>Arpit Vishwakarma| </title>
-        
-    <!--- Default Stylesheet -->
-    <link href="./style.css" rel="stylesheet">
-    
-    <!--- Font Awesome Icons -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
-        
-    </head>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Wizard</title>
+    <meta name="google-site-verification" content="iNzSj2wvdEOVu1PtrK5FfEiu_teOG2LQn5i3kg-xozQ" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
 <body>
-
- <div class="main">
+    <div class="container">
+        <h1 class="heading">Temperature Converter </h1>
+        <div class="temp-container">
+            <label for="Celcius">Celcius</label>
+            <input 
+            onchange ="computeTemp(event)"
+            type="number" 
+            name="Celcius" 
+            id="Celcius" 
+            class="Celcius" 
+            placeholder="Enter Temperature in Celcius"/>    
+        </div>
+        <div class="temp-container">
+            <label for="fahre">Fahrenheit</label>
+            <input 
+            onchange="computeTemp(event)"
+            type="number" 
+            name="Fahrenheit" 
+            id="Fahrenheit" 
+            class="Fahrenheit" 
+            placeholder="Enter Temperature in Fahrenheit"/>    
+        </div>
+        <div class="temp-container">
+            <label for="Kelvin">Kelvin</label>
+            <input 
+            onchange="computeTemp(event)"
+            type="number" 
+            name="Kelvin" 
+            id="Kelvin" 
+            class="Kelvin" 
+            placeholder="Enter Temperature in Kelvin"/>    
+        </div>
+    </div>
     
-   <center>
-       
-        <div class="about">
-            <a href="https://www.instagram.com/nihilistic.means">
-            <img src="./anime.png" class="main-img">
-            </a>
-            <h3><span>Arpit</span></h3>
-            <button class="btn btn-lg btn-yellow">Hello, Glad to see you here!</button>
-            <p>I am a full stack developer from shahdol. You can view my works 
-                   <a href="https://github.com/okarin25">here</a>. 
-                    I'm into Philosophy, Psychology, Arts, History, Architecture and Literature. 
-                     Presently I am graduate at 
-                    <a href="http://www.pondiuni.edu.in" target="_blank">Pondicherry University.</a>
-                         <br/><span>Thank You for Visiting!</span>
-            </p>
-          
-           <p>Ping me at <a href="mailto:arpv0425@gmail.com">arpv0425@gmail.com</a></p>
-            
-            <hr>
-            
-            <ul class="social">
-              
-              <li><a href="https://www.linkedin.com/in/arpit-vishwakarma" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              
-            </ul>
-            
-          </div>
-       
-    </center>
     
- </div>
-    
+    <script src="./script.js"></script>
 </body>
-    
-
-    
 </html>
